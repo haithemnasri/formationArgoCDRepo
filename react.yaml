@@ -38,3 +38,4 @@ spec:
     - port: 80
       targetPort: 80
   type: ClusterIP
+# Triggered by Jenkins at lun. 15 sept. 2025 22:44:01 CET
