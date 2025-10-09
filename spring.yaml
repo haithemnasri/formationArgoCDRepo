@@ -50,14 +50,15 @@ spec:
           readinessProbe:
             tcpSocket:
               port: 8082
-            initialDelaySeconds: 30
+            initialDelaySeconds: 120
             periodSeconds: 10
-            failureThreshold: 6
+            failureThreshold: 10
           livenessProbe:
             tcpSocket:
               port: 8082
-            initialDelaySeconds: 60
+            initialDelaySeconds: 180
             periodSeconds: 20
+            failureThreshold: 5
 # Triggered by Jenkins at 13 سبتمبر, 2025 CET 03:09:58 م
 # Triggered by Jenkins at 15 سبتمبر, 2025 CET 06:13:19 م
 # Triggered by Jenkins at lun. 15 sept. 2025 21:16:41 CET
