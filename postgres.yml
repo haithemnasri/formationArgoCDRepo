@@ -44,7 +44,7 @@ spec:
             periodSeconds: 20
           volumeMounts:
             - name: postgres-storage
-              mountPath: /var/lib/postgresql/data
+              mountPath: /var/lib/postgresql/dataa
       volumes:
         - name: postgres-storage
           persistentVolumeClaim:
